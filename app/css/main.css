@@ -168,9 +168,6 @@ header {
   border: 1px solid #e6e7e8;
   margin-top: 30px;
 }
-.about-1 p {
-  margin-bottom: 0;
-}
 .about-1:hover {
   background: #503392;
   color: #fff;
@@ -179,10 +176,24 @@ header {
   border: none;
   border-radius: 5px;
 }
+.about-1 p {
+  margin-bottom: 0;
+}
 .about_icon {
   padding-top: 70px;
   padding-bottom: 35px;
   text-align: center;
+}
+.icon-1-1 {
+  position: absolute;
+  margin-left: -95px;
+  opacity: 0;
+}
+.about-1:hover .icon-1 {
+  opacity: 0;
+}
+.about-1:hover .icon-1-1 {
+  opacity: 1;
 }
 .about_title_1 h3 {
   font-family: 'Raleway';
@@ -197,19 +208,59 @@ header {
   text-align: center;
   line-height: 1.9;
 }
-
-
-
-.featured{
+/* Featured Works  */
+.featured {
   margin-top: 100px;
+  background: #f1f2f2;
 }
-.border{
-background: red;
-padding-top:40px;
-width: 100%;
+.featured h2 {
+  font-family: 'Lato';
+  font-size: 50px;
+  padding-top: 70px;
+  padding-bottom: 35px;
 }
-.monitor img{
-
- width: 640px;
-height: auto;
+.featured p {
+  font-family: 'Raleway';
+  font-size: 14px;
+}
+.monitor img {
+  width: 100%;
+}
+/* Portfolio */
+.portf_title h3 {
+  font-family: 'Lato';
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  padding-top: 100px;
+}
+.portf_title p {
+  font-family: 'Raleway';
+  font-size: 17px;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.portf img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+/* Calculator */
+.calculator {
+  margin-top: 100px;
+  background: url(../images/fon-2.png) no-repeat;
+  padding-top: 576px;
+}
+/* Meet Our Team */
+.our_title h3 {
+  font-family: 'Lato';
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  padding-top: 100px;
+}
+.our_title p {
+  font-family: 'Raleway';
+  font-size: 17px;
+  text-align: center;
+  padding-bottom: 70px;
 }
