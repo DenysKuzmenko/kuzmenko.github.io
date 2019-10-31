@@ -10,7 +10,7 @@ jQuery(document).ready(function () {
 		items: 1,
 		autoplay: true,
 		autoplayTimeout: 6000,
-		autoplayHoverPause: false,
+		autoplayHoverPause: true,
 		smartSpeed: 1000,
 		dotsSpeed: 1000,
 		loop: true,
@@ -48,7 +48,7 @@ jQuery(document).ready(function () {
 		}
 	});
 
-	var slid = jQuery('#client-slider');
+	var slid = jQuery('#logo-client-slider');
 		
 	slid.owlCarousel({
 	loop:true,
@@ -76,7 +76,7 @@ jQuery(document).ready(function () {
 				mouseDrag: true
 			},
 			1099:{
-				items: 4,
+				items: 6,
 				mouseDrag: true
 			}
 		}
