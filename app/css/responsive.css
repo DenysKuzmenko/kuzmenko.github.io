@@ -2,15 +2,47 @@
 /* CSS Document */
 
 @media(max-width:1199px){
-	
-	
+
+/*  Menu */
+.form-search {
+  	margin-left: -55px;
+}
+.form-search:hover > .pole-search {
+  width: 150px;
+  }
+
+.contacts a {
+	padding: 0 135px 0 135px;
+}
+/* Block-1 */
+.block-1 h2{
+	font-size: 36px;
+}
+.b1_title{
+	font-size: 35px;
+	text-align: center;
+}
+.b1_text_2 {
+  padding-top: 0;
+}
+.block-1 a{
+	padding: 10px 20px;
+}
+
+/* Meet Our Team */
+.our_hover{
+	padding-top: 220px;
+}
 	}	
+
 @media(max-width:991px){
-	}
-	
-@media(max-width:767px){
-	.btn_menu{
-		display:block;
+.logo{
+	margin-top: 10px;
+	margin-left: 5px;
+}
+.btn_menu{
+		display: block;
+
 		}
 	.nav-menu ul{
 		display:none;
@@ -21,24 +53,18 @@
 		transition:0.3s;
 		cursor:pointer;
 		}
-.btn_menu i:hover{
-	color:#fff;
-	}
+
 .nav-menu {
-	float: right;
+	margin-left: 10px;
     padding: 10px;
-    margin-bottom: 11px;
     display: inherit;
 }
 .header .border-header {
     border-bottom: inherit;
     padding-bottom: 0;
 }
-
 .nav-menu li a:hover{
-	color:#ffeb3b;
 	text-decoration: none;
-    border-bottom: solid 1px #ffeb3b;
     padding-bottom:0px;
 	}
 .nav-menu li a{
@@ -48,23 +74,84 @@
 	padding-bottom:20px;
 	margin-right:0;
 	}
-
-	.logo-site{
-			display: block;
-			text-align: center;
-			margin-bottom: 20px;
-		}
-		
-
 .form-search {
-    text-align: right;
+	margin-top: -20px;
+  	margin-left: 15px;
+}
+.contacts{
+ margin-top: -415px;
+}
+.contacts a{
+	padding: 0;
+	margin: 0 auto;
+	margin-left: 150px;	
 }
 
 
+.textarea{
+	width: 100%;
+}
+}
+	
+@media(max-width:767px){
+.logo{
+	margin-left: -40px;
+}
+
+.contacts a{
+	margin-left: 30px;
+}
+.nav-menu {
+	margin-left: -80px;
+}
+.form-search {
+  	margin-left: -63px;
+}
+	
+
+
+@media(max-width:565px){
+	.logo{
+	margin: 0 auto;
+}
+.contacts{
+	margin-top: -40px;
+	margin-left: -20px;
+}
+.contacts a{
+	margin-left: 40px;
+}
+.nav-menu {
+	margin-left: 0px;
+	 
+}
+.nav-menu ul{
+	background: #fff;
+	width: 80px;
+}
+.nav-menu ul li a {
+  color: #503392;
+}
+.form-search {
+  	margin-left: 0px;
+}
+
+/* Block-1 */
+.block-1 {
+  margin-top: 600px;
+}
+/*Footer*/
+
+	.footer_form{
+		margin-top: 50px;
+		background: none;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
 	}
-
-
-@media(max-width:470px){
+	.input{
+		width: 100%;
+	}
 	}
 @media(max-width:400px){
 	}

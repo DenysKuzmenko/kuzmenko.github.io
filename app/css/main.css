@@ -84,20 +84,25 @@ header {
 .btn_menu {
   display: none;
 }
-
 .form-search {
   padding-top: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: -100px;
-
 }
- .form-search:hover > .pole-search {
+.form-search:hover > .pole-search {
   width: 200px;
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
   transition: 0.8s;
-} 
+}
 .btn-search {
   margin-top: 5px;
   font-size: 0;
@@ -114,26 +119,26 @@ header {
   outline: none;
   width: 0;
 }
-.contacts a{
+.contacts {
+  text-align: center;
+  margin-top: -67px;
+}
+.contacts a {
   font-family: 'Lato';
   color: #fff;
   padding: 0 160px 0 160px;
-
 }
-.contacts a:hover{
+.contacts a:hover {
   color: #fff;
   text-decoration: none;
 }
-
-
-
 /* Block-1 */
 .block-1 {
   margin-top: 793px;
 }
-.laptop img{
-width: 100%;
-height: auto;
+.laptop img {
+  width: 100%;
+  height: auto;
 }
 .block-1 h2 {
   font-family: 'Lato';
@@ -156,18 +161,25 @@ height: auto;
 }
 .b1_text_2 {
   padding-top: 15px;
-  padding-bottom: 60px;
 }
 .block-1 a {
+  float: right;
   font-family: 'Raleway';
   font-size: 14px;
   font-weight: bold;
-  color: #000;
-  border: 2px solid #000;
+  color: #fff;
   padding: 17px 40px;
+  -webkit-box-shadow: 0px 0 40px 40px #503392 inset, 0 0 0 0 #503392;
+          box-shadow: 0px 0 40px 40px #503392 inset, 0 0 0 0 #503392;
+  -webkit-transition: 0.15s ease-in-out;
+  -o-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
 }
 .block-1 a:hover {
+  -webkit-box-shadow: 0 0 10px 0 #503392 inset, 0 0 10px 4px #503392;
+          box-shadow: 0 0 10px 0 #503392 inset, 0 0 10px 4px #503392;
   text-decoration: none;
+  color: #000;
 }
 /*  About us */
 .about_title h3 {
@@ -260,21 +272,39 @@ height: auto;
   width: 100%;
   margin-bottom: 30px;
 }
-
 /* Calculator */
-
 .calculator {
-  margin-top: 100px;
   background: url(../images/fon-2.png) no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 576px;
-
- 
+  height: 576px;
 }
-
+.form_calc {
+  margin-top: 30px;
+}
+.form_calc h3 {
+  font-family: 'Raleway';
+  font-size: 20px;
+  color: #fff;
+}
+#price input {
+  display: none;
+}
+#price input:checked + label {
+  background: #fff;
+  color: #503392;
+}
+#price label {
+  cursor: pointer;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 100%;
+  font-family: 'Lato';
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 10px;
+}
 /* Meet Our Team */
-
 .our_title h3 {
   font-family: 'Lato';
   font-weight: bold;
@@ -288,18 +318,22 @@ height: auto;
   text-align: center;
   padding-bottom: 70px;
 }
+.photo img {
+  width: 100%;
+}
 .our_photo {
   position: relative;
 }
 .our_hover {
   position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
   text-align: center;
   padding-top: 300px;
-  width: 361px;
   opacity: 0;
   -webkit-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
@@ -329,42 +363,44 @@ height: auto;
   text-align: center;
   padding-bottom: 100px;
 }
-.client-title h3{
+.client-title h3 {
   padding-top: 75px;
   font-family: 'Lato';
   font-size: 48px;
 }
-#next-slider .client_box{
+#next-slider .client_box {
   margin-top: 150px;
 }
-#next-slider .client_border{
+#next-slider .client_border {
   border: 1px solid #000;
   border: none;
   background: #fff;
-  color:#636363;
+  color: #636363;
   width: 800px;
-  margin:0 auto;
-} 
-#next-slider .client_photo img{
+  margin: 0 auto;
+}
+#next-slider .client_photo img {
   width: auto;
   border-radius: 100px;
   position: absolute;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%)
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
-#next-slider .client_info h3{
+#next-slider .client_info h3 {
   padding-top: 100px;
   font-family: 'Lato';
   font-weight: bold;
   font-size: 18px;
 }
-#next-slider .client_info p{
+#next-slider .client_info p {
   font-family: 'Lato';
   font-size: 14px;
   font-style: italic;
 }
-#next-slider .client_comment p{
+#next-slider .client_comment p {
   font-family: 'Raleway';
   font-size: 14px;
   text-align: center;
@@ -373,53 +409,50 @@ height: auto;
   margin: 0 auto;
   padding-bottom: 60px;
 }
-
-#next-slider .owl-nav .owl-prev{
+#next-slider .owl-nav .owl-prev {
   outline: none;
-  background:url(../images/arrow_prev-1.png) no-repeat;
+  background: url(../images/arrow_prev-1.png) no-repeat;
   position: absolute;
   height: 110px;
-  width:110px;
+  width: 110px;
   left: 120px;
   top: 50%;
 }
-#next-slider .owl-nav .owl-prev:hover{
-   background:url(../images/arrow_prev-2.png) no-repeat;
+#next-slider .owl-nav .owl-prev:hover {
+  background: url(../images/arrow_prev-2.png) no-repeat;
 }
-#next-slider .owl-nav .owl-next{
+#next-slider .owl-nav .owl-next {
   outline: none;
-  background:url(../images/arrow_next-1.png) no-repeat;
+  background: url(../images/arrow_next-1.png) no-repeat;
   position: absolute;
   height: 110px;
-  width:110px;
+  width: 110px;
   right: 120px;
   top: 50%;
 }
-#next-slider .owl-nav .owl-next:hover{
-   background:url(../images/arrow_next-2.png) no-repeat;
+#next-slider .owl-nav .owl-next:hover {
+  background: url(../images/arrow_next-2.png) no-repeat;
 }
-.logo-client{
+.logo-client {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-#logo-client-slider .item a img{
+#logo-client-slider .item a img {
   width: auto;
   margin: 0 auto;
 }
-#logo-client-slider .owl-dot span{
-  background:#A8ADAD;
+#logo-client-slider .owl-dot span {
+  background: #A8ADAD;
 }
-#logo-client-slider .owl-dot.active{
+#logo-client-slider .owl-dot.active {
   outline: none;
 }
-#logo-client-slider .owl-dot.active span{
+#logo-client-slider .owl-dot.active span {
   outline: none;
-  background:#503392;
+  background: #503392;
 }
-
 /*Footer*/
-
-.footer{
+.footer {
   left: 0;
   bottom: 0;
   width: 100%;
@@ -429,34 +462,41 @@ height: auto;
   background-position: center;
   padding-top: 634px;
 }
-.footer_form{
+.footer_form {
   position: absolute;
+  top: 45%;
   left: 50%;
-  margin-left: -447px;
-  top: 50%;
-  margin-top: -255px;
-  background: rgb(0,0,0,0.4);
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap:nowrap;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
 }
-.form_block{
-  padding: 83px 60px 81px 65px;
+.form_block {
+  padding: 83px 60px 0 65px;
 }
-.input{
+.input {
   font-family: 'Lato';
   font-size: 16px;
   background: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   margin: 0 7px 10px 0;
   width: 240px;
-  padding:10px;
+  padding: 10px;
   outline: none;
 }
 .form_block input[type="text"],
-.form_block textarea[type="text"]{
+.form_block textarea[type="text"] {
   color: #fff;
 }
-.textarea{
+.textarea {
   font-family: 'Lato';
   font-size: 16px;
   padding-top: 10px;
@@ -465,40 +505,43 @@ height: auto;
   height: 145px;
   resize: none;
   background: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   outline: none;
 }
-.form_btn{
+.form_btn {
   padding: 10px 50px;
   background: #fff;
   border: none;
-  color:#503392;
 }
-.form_btn:hover{
+.form_btn:hover {
   background: #503392;
   color: #fff;
 }
-
-.form_info{
+.form_info {
   font-family: 'Lato';
   font-size: 18px;
   color: #fff;
   padding: 83px 62px 200px 0;
 }
-.footer_stripe{
+.footer_stripe {
   background: #1a1a1a;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
-.footer-title h3{
+.footer-title h3,
+.form_btn {
   font-family: 'Lato';
   font-size: 16px;
   color: #606060;
-  
 }
-.footer-icon img{
-   margin: 5px;
+.footer-icon img {
+  margin: 5px;
 }

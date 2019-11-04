@@ -11,17 +11,22 @@
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="css/libs.css">
 	<link rel="stylesheet" type="text/css" href="css/libs.min.css">
-	<link rel="stylesheet" type="text/css" href="js/libs.min.js">
-	<link rel="stylesheet" type="text/css" href="js/common.js">
+	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="OwlCarousel/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="OwlCarousel/owl.theme.default.min.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+	
 	<script type="text/javascript" src="js/jquery-3.0.0.js"></script>
-	<script type="text/javascript" src="OwlCarousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/libs.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/calculator.js"></script>
+	<script type="text/javascript" src="js/libs.min.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="OwlCarousel/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
+
+
 </head>
 <body>
 	<main class="far_page">
@@ -31,11 +36,11 @@
 			<header class="header">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 logo">
+						<div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 logo">
 							<a href="#" class="logo"><img src="images/logo.png" alt="logo"></a>
 						</div>
 	<!-- Menu -->
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 menu">
+						<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 menu">
 							<nav class="nav-menu">
 								<span class="btn_menu"><i class="fa fa-align-justify"></i></span>
 								<ul>
@@ -48,7 +53,7 @@
 						        </ul>
 						    </nav>
 						</div>
-						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 form-search">
+						<div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 form-search">
 							<input class="btn-search" type="submit" value="Search">
 							<input class="pole-search" type="search" name="search" placeholder="Type to search">
 							
@@ -65,18 +70,17 @@
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 title">
 							<h3>We Are A</h3>
 							<h1>Creative Design Agency</h1>
+						</div>
 
-								<div class="contacts">
-									<a href="tel:+880 1630742521">
-										<img src="images/icon-phone.png" alt="phone">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contacts">
+							<a href="tel:+880 1630742521">
+								<img src="images/icon-phone.png" alt="phone">
 											+880 1630742521
-									</a>
-									
-									<a href="mailto:creativeagency@gmail.com">
-										<img src="images/icon-mail.png" alt="mail">
+							</a>	
+							<a href="mailto:creativeagency@gmail.com">
+								<img src="images/icon-mail.png" alt="mail">
 											creativeagency@gmail.com
-									</a>
-								</div>
+							</a>
 						</div>
 						
 							
@@ -274,7 +278,26 @@
 			<section class="calculator">
 				<div class="container">
 					<div class="row">
-					
+						<form class="form_calc">
+							<div id="price">
+								<p><input type="checkbox" id="cutaway" name="cutaway" value="190">
+									<label for="cutaway">Site-cutaway</label></p>
+								<p><input type="checkbox" id="landing" name="landing" value="200">
+									<label for="landing">Landing page</label></p>
+								<p><input type="checkbox" id="store" name="store" value="500">
+									<label for="store">Online store</label></p>
+								<p><input type="checkbox" id="seo" name="seo" value="200">
+									<label for="seo">SEO-optimize your website</label></p>
+								<p><input type="checkbox" id="logo" name="logo" value="100">
+									<label for="logo">Logo development</label></p>
+								<p><input type="checkbox" id="desing" name="desing" value="350">
+									<label for="desing">Website design development</label></p>
+								<p><input type="checkbox" id="corporate" name="corporate" value="400">
+									<label for="corporate">Corporate site</label></p>
+							</div>
+							<h3>Cost: <span class="sum">0</span> $</h3>
+						</form>
+
 					</div>
 				</div>
 			</section>
@@ -288,71 +311,85 @@
 							<p>Latest Project We have been Working on</p>
 						</div>
 
-						<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 our_photo">
-							<div class="our_hover">
-								<h3>Steven Cole</h3>
-								<p>IT Specialist</p>
-									<div class="our_icon">
-										<a href="http://www.facebook.com/" target="_blank"> 
-											<img src="images/icon_facebook.png" alt="facebook">
-										</a>
-										<a href="https://twitter.com/" target="_blank">
-											<img src="images/icon_twitter.png" alt="twitter">
-										</a>
-										<a href="https://www.instagram.com/" target="_blank">
-											<img src="images/icon_instagram.png" alt="google+">
-										</a>
-										<a href="https://www.linkedin.com/" target="_blank">
-											<img src="images/icon_in.png" alt="in">
-										</a>
-									</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<div class="our_photo">
+								<div class="photo">
+									<img src="images/photo-1.png" alt="photo">
+								</div>
+								<div class="our_hover">
+									<h3>Steven Cole</h3>
+									<p>IT Specialist</p>
+										<div class="our_icon">
+											<a href="http://www.facebook.com/" target="_blank"> 
+												<img src="images/icon_facebook.png" alt="facebook">
+											</a>
+											<a href="https://twitter.com/" target="_blank">
+												<img src="images/icon_twitter.png" alt="twitter">
+											</a>
+											<a href="https://www.instagram.com/" target="_blank">
+												<img src="images/icon_instagram.png" alt="google+">
+											</a>
+											<a href="https://www.linkedin.com/" target="_blank">
+												<img src="images/icon_in.png" alt="in">
+											</a>
+										</div>
+								</div>
 							</div>
-							<img src="images/photo-1.png" alt="photo" class="photo">
 						</div>
 
-						<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 our_photo">
-							<div class="our_hover">
-								<h3>Muslim Mahin</h3>
-								<p>CEO & Developer</p>
-									<div class="our_icon">
-										<a href="http://www.facebook.com/" target="_blank"> 
-											<img src="images/icon_facebook.png" alt="facebook">
-										</a>
-										<a href="https://twitter.com/" target="_blank">
-											<img src="images/icon_twitter.png" alt="twitter">
-										</a>
-										<a href="https://www.instagram.com/" target="_blank">
-											<img src="images/icon_instagram.png" alt="google+">
-										</a>
-										<a href="https://www.linkedin.com/" target="_blank">
-											<img src="images/icon_in.png" alt="in">
-										</a>
-									</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<div class="our_photo">
+								<div class="photo">
+									<img src="images/photo-2.png" alt="photo">
+								</div>
+								<div class="our_hover">
+									<h3>Muslim Mahin</h3>
+									<p>CEO & Developer</p>
+										<div class="our_icon">
+											<a href="http://www.facebook.com/" target="_blank"> 
+												<img src="images/icon_facebook.png" alt="facebook">
+											</a>
+											<a href="https://twitter.com/" target="_blank">
+												<img src="images/icon_twitter.png" alt="twitter">
+											</a>
+											<a href="https://www.instagram.com/" target="_blank">
+												<img src="images/icon_instagram.png" alt="google+">
+											</a>
+											<a href="https://www.linkedin.com/" target="_blank">
+												<img src="images/icon_in.png" alt="in">
+											</a>
+										</div>
+								</div>
 							</div>
-							<img src="images/photo-2.png" alt="photo" class="photo">
 						</div>
+							
 
-						<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 our_photo">
-							<div class="our_hover">
-								<h3>Alexis Simpson</h3>
-								<p>UI Designer</p>
-									<div class="our_icon">
-										<a href="http://www.facebook.com/" target="_blank"> 
-											<img src="images/icon_facebook.png" alt="facebook">
-										</a>
-										<a href="https://twitter.com/" target="_blank">
-											<img src="images/icon_twitter.png" alt="twitter">
-										</a>
-										<a href="https://www.instagram.com/" target="_blank">
-											<img src="images/icon_instagram.png" alt="instagram">
-										</a>
-										<a href="https://www.linkedin.com/" target="_blank">
-											<img src="images/icon_in.png" alt="in">
-										</a>
-									</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<div class=" our_photo">
+								<div class="photo">
+									<img src="images/photo-3.png" alt="photo">
+								</div>
+								<div class="our_hover">
+									<h3>Alexis Simpson</h3>
+									<p>UI Designer</p>
+										<div class="our_icon">
+											<a href="http://www.facebook.com/" target="_blank"> 
+												<img src="images/icon_facebook.png" alt="facebook">
+											</a>
+											<a href="https://twitter.com/" target="_blank">
+												<img src="images/icon_twitter.png" alt="twitter">
+											</a>
+											<a href="https://www.instagram.com/" target="_blank">
+												<img src="images/icon_instagram.png" alt="instagram">
+											</a>
+											<a href="https://www.linkedin.com/" target="_blank">
+												<img src="images/icon_in.png" alt="in">
+											</a>
+										</div>
+								</div>
 							</div>
-							<img src="images/photo-3.png" alt="photo" class="photo">
 						</div>
+			
 					</div>	
 				</div>
 			</section>
@@ -444,7 +481,7 @@
 <!--Footer-->
 		<footer class="footer">
 	<!-- Footer_Form -->
-			<form class="footer_form" action="../mail.php" method="POST" name="form2">
+			<form class="footer_form" action="php/mail.php" method="POST" name="form2">
 				<div class="form_block">
 					<input type="text" name="name" class="input" maxlength="40" required placeholder="Full Name">
 					<input type="text" name="mail" class="input" required placeholder="E-mail Address">
@@ -453,7 +490,7 @@
 				</div>
 				<div class="form_info"> 
 					<p>Addres</p>
-					<p>69/A, Mohmmdi Housing Ltd.</p>
+					<p>GV75+9F London, United Kingdom</p>
 					<p>+880 1630742521</p>
 					<p>creativeagency@gmail.com</p>
 				</div>
