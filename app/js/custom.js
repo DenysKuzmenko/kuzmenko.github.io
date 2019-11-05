@@ -10,7 +10,7 @@ jQuery(document).ready(function () {
 		items: 1,
 		autoplay: true,
 		autoplayTimeout: 6000,
-		autoplayHoverPause: true,
+		autoplayHoverPause: false,
 		smartSpeed: 1000,
 		dotsSpeed: 1000,
 		loop: true,
@@ -29,7 +29,7 @@ jQuery(document).ready(function () {
 				mouseDrag: true,
 				autoplay: false
 			},
-			479:{
+			665:{
 				items: 1,
 				mouseDrag: true
 			},
@@ -64,15 +64,15 @@ jQuery(document).ready(function () {
 				autoplay: false
 			},
 			479:{
-				items: 1,
+				items: 3,
 				mouseDrag: true
 			},
 			767:{
-				items: 2,
+				items: 4,
 				mouseDrag: true
 			},
 			991:{
-				items: 3,
+				items: 4,
 				mouseDrag: true
 			},
 			1099:{

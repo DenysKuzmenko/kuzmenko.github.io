@@ -45,11 +45,12 @@
 								<span class="btn_menu"><i class="fa fa-align-justify"></i></span>
 								<ul>
 									<li class="active iteam"><a href="#" class="item-teg">Home</a></li>
-						        	<li class="iteam"><a href="#" class="item-teg">Services</a></li>
-						            <li class="iteam"><a href="#" class="item-teg">About</a></li>
-						            <li class="iteam"><a href="#" class="item-teg">Portfolio</a></li>
-						           	<li class="iteam"><a href="#" class="item-teg">Pricing</a></li>
-						           	<li class="iteam"><a href="#" class="item-teg">Contact</a></li>
+						        	<li class="iteam"><a href="#about" class="item-teg">About</a></li>
+						            <li class="iteam"><a href="#portfolio" class="item-teg">Portfolio</a></li>
+						            <li class="iteam"><a href="#pricing" class="item-teg">Pricing</a></li>
+						           	<li class="iteam"><a href="#team" class="item-teg">Team</a></li>
+						           	<li class="iteam"><a href="#clients" class="item-teg">Clients</a></li>
+						           	<li class="iteam"><a href="#contact" class="item-teg">Contact</a></li>
 						        </ul>
 						    </nav>
 						</div>
@@ -119,7 +120,7 @@
 					<div class="row">
 
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 about_title">
-							<h3>About Us</h3>
+							<h3 id="about">About Us</h3>
 							<p>Latest Project We have been Working on</p>
 						</div>
 
@@ -235,7 +236,7 @@
 					<div class="row">
 
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 portf_title">
-							<h3>Portfolio</h3>
+							<h3 id="portfolio">Portfolio</h3>
 							<p>it has survived not only five centuries, but also the leap  scrambled it to make a type.</p>
 						</div>
 
@@ -278,26 +279,28 @@
 			<section class="calculator">
 				<div class="container">
 					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 calc_title">
+							<h3 id="pricing">Pricing</h3>
+						</div>
 						<form class="form_calc">
 							<div id="price">
-								<p><input type="checkbox" id="cutaway" name="cutaway" value="190">
-									<label for="cutaway">Site-cutaway</label></p>
-								<p><input type="checkbox" id="landing" name="landing" value="200">
-									<label for="landing">Landing page</label></p>
-								<p><input type="checkbox" id="store" name="store" value="500">
-									<label for="store">Online store</label></p>
-								<p><input type="checkbox" id="seo" name="seo" value="200">
-									<label for="seo">SEO-optimize your website</label></p>
-								<p><input type="checkbox" id="logo" name="logo" value="100">
-									<label for="logo">Logo development</label></p>
-								<p><input type="checkbox" id="desing" name="desing" value="350">
-									<label for="desing">Website design development</label></p>
-								<p><input type="checkbox" id="corporate" name="corporate" value="400">
-									<label for="corporate">Corporate site</label></p>
+								<input type="checkbox" id="cutaway" name="cutaway" value="190">
+									<label for="cutaway">Site-cutaway</label>	 
+								<input type="checkbox" id="landing" name="landing" value="200">
+									<label for="landing">Landing page</label>
+								<input type="checkbox" id="store" name="store" value="500">
+									<label for="store">Online store</label>
+								<input type="checkbox" id="seo" name="seo" value="200">
+									<label for="seo">SEO-optimize your website</label>
+								<input type="checkbox" id="logo" name="logo" value="100">
+									<label for="logo">Logo development</label>
+								<input type="checkbox" id="desing" name="desing" value="350">
+									<label for="desing">Website design development</label>
+								<input type="checkbox" id="corporate" name="corporate" value="400">
+									<label for="corporate">Corporate site</label>
 							</div>
 							<h3>Cost: <span class="sum">0</span> $</h3>
 						</form>
-
 					</div>
 				</div>
 			</section>
@@ -307,7 +310,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 our_title">
-							<h3>Meet Our Team</h3>
+							<h3 id="team">Meet Our Team</h3>
 							<p>Latest Project We have been Working on</p>
 						</div>
 
@@ -399,7 +402,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 client-title">
-							<h3>Client Say</h3>
+							<h3 id="clients">Client Say</h3>
 						</div>
 	<!-- Owl-carousel -->					
 						<div class="owl-carousel owl-theme" id="next-slider">
@@ -482,17 +485,17 @@
 		<footer class="footer">
 	<!-- Footer_Form -->
 			<form class="footer_form" action="php/mail.php" method="POST" name="form2">
-				<div class="form_block">
+				<div class="form_block" id="contact">
 					<input type="text" name="name" class="input" maxlength="40" required placeholder="Full Name">
 					<input type="text" name="mail" class="input" required placeholder="E-mail Address">
 					<p><textarea type="text" name="textarea" class="textarea" required placeholder="Message"></textarea></p>
 					<p><button class="form_btn">Send</button>
 				</div>
 				<div class="form_info"> 
-					<p>Addres</p>
-					<p>GV75+9F London, United Kingdom</p>
-					<p>+880 1630742521</p>
-					<p>creativeagency@gmail.com</p>
+					<p>Addres:</p>
+					<p><a href="https://www.google.com/maps/place/99+Church+St,+Marylebone,+London+NW8+8EY,+%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D1%96%D1%8F/@51.5225078,-0.1734926,17z/data=!3m1!4b1!4m5!3m4!1s0x48761ab125cad12d:0x59f0a84e2c794cdc!8m2!3d51.5225078!4d-0.1713039?hl=en" target="_blank"> 99 Church St, Marylebone, London</a></p>
+					<p><a href="tel:+880 1630742521">+880 1630742521</a></p>
+					<p><a href="mailto:creativeagency@gmail.com">creativeagency@gmail.com</a></p>
 				</div>
 			</form>	
     <!-- Footer_Stripe -->

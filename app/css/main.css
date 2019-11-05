@@ -126,7 +126,7 @@ header {
 .contacts a {
   font-family: 'Lato';
   color: #fff;
-  padding: 0 160px 0 160px;
+  padding: 0 150px 0 190px;
 }
 .contacts a:hover {
   color: #fff;
@@ -179,7 +179,7 @@ header {
   -webkit-box-shadow: 0 0 10px 0 #503392 inset, 0 0 10px 4px #503392;
           box-shadow: 0 0 10px 0 #503392 inset, 0 0 10px 4px #503392;
   text-decoration: none;
-  color: #000;
+  color: #503392;
 }
 /*  About us */
 .about_title h3 {
@@ -273,6 +273,13 @@ header {
   margin-bottom: 30px;
 }
 /* Calculator */
+.calc_title h3 {
+  font-family: 'Lato';
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 30px;
+}
 .calculator {
   background: url(../images/fon-2.png) no-repeat;
   background-size: cover;
@@ -280,7 +287,7 @@ header {
   height: 576px;
 }
 .form_calc {
-  margin-top: 30px;
+  margin: 0 auto;
 }
 .form_calc h3 {
   font-family: 'Raleway';
@@ -303,6 +310,16 @@ header {
   font-weight: bold;
   text-align: center;
   padding: 10px 10px;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /* Meet Our Team */
 .our_title h3 {
@@ -522,6 +539,13 @@ header {
   font-size: 18px;
   color: #fff;
   padding: 83px 62px 200px 0;
+}
+.form_info a {
+  color: #fff;
+}
+.form_info a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 .footer_stripe {
   background: #1a1a1a;

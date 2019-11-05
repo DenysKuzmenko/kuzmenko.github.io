@@ -12,7 +12,7 @@
   }
 
 .contacts a {
-	padding: 0 135px 0 135px;
+	padding: 0 115px 0 169px;
 }
 /* Block-1 */
 .block-1 h2{
@@ -86,7 +86,82 @@
 	margin: 0 auto;
 	margin-left: 150px;	
 }
-
+/* Block-1 */
+.laptop img{
+	margin-top: 85px;
+}
+.block-1 {
+  margin-top: 620px;
+}
+.block-1 h2{
+	font-size: 25px;
+	text-align: center;
+}
+.b1_title{
+	font-size: 25px;
+}
+/*  About us */
+.about_title h3 {
+  padding-top: 50px;
+}
+.about_title p {
+	padding-bottom: 30px;
+}
+/* Featured Works  */
+.monitor img {
+  margin-top: 125px;
+}
+.featured h2 {
+  font-size: 40px;
+  }
+  /* Portfolio */
+.portf_title h3 {
+  padding-top: 50px;
+}
+.portf_title p {
+	padding-bottom: 30px;
+}
+/* Meet Our Team */
+.our_title h3 {
+	padding-top: 50px;
+}
+.our_title p {
+	padding-bottom: 30px;
+}
+.our_hover{
+	padding-top: 140px;
+}
+.our_icon img {
+	padding:5px;
+}
+/* Client */
+.client {
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+.client-title h3 {
+  padding-top: 30px;
+  }
+#next-slider .client_box {
+  margin-top: 100px;
+}
+#next-slider .client_photo img {
+	width: 120px;
+}
+#next-slider .client_border{
+	width: 100%;
+	}
+#next-slider .owl-nav .owl-prev{
+	left: -10px;
+}
+#next-slider .owl-nav .owl-next{
+	right: -10px;
+}
+/* Logo Clients Carousel */
+#logo-client-slider .item a img {
+  width: 70px;
+}
+	
 
 .textarea{
 	width: 100%;
@@ -97,7 +172,6 @@
 .logo{
 	margin-left: -40px;
 }
-
 .contacts a{
 	margin-left: 30px;
 }
@@ -107,10 +181,69 @@
 .form-search {
   	margin-left: -63px;
 }
-	
+/* Block-1 */
+.block-1 {
+  margin-top: 500px;
+}
+.block-1 h2{
+	font-size: 36px;
+}
+.b1_title{
+	font-size: 30px;
+}
+/*  About us */
+.about_title  {
+  padding-bottom: 0px;
+  }
+  /* Featured Works  */
+  .featured {
+  margin-top: 50px;
+}
+.featured h2 {
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  }
+ .monitor img {
+   margin-top: 115px;
+}
 
+/* Meet Our Team */
+.our_photo{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+ .photo img{
+  width: 300px;
+}
+.our_hover{
+	padding-top: 250px;
+	width: 300px;
+	text-align: center;
+	left: 105px;
+}
+.our_icon img {
+	padding:5px;
+}
+/* Client */
+#next-slider .owl-nav .owl-prev,
+#next-slider .owl-nav .owl-prev:hover{
+	background: url(../images/prev-2.png) no-repeat;
+	height: 29px;
+  	width: 17px;
+  	left: -4px;
 
-@media(max-width:565px){
+}
+#next-slider .owl-nav .owl-next,
+#next-slider .owl-nav .owl-next:hover{
+	background: url(../images/nex-2.png) no-repeat;
+	height: 29px;
+  	width: 17px;
+  	right: -4px;
+} 
+}
+@media(max-width:665px){
 	.logo{
 	margin: 0 auto;
 }
@@ -143,17 +276,64 @@
 /*Footer*/
 
 	.footer_form{
-		margin-top: 50px;
+		margin-top: -65px;
 		background: none;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 	}
+	.form_info{
+	margin: 0 auto;
+	padding: 0;
+	margin-top: 60px;
+}
 	.input{
 		width: 100%;
 	}
 	}
-@media(max-width:400px){
+@media(max-width:575px){
+/* Block-1 */
+	.block-1 {
+  margin-top: 520px;
+}
+/* About us */
+.about-1{
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+/* Featured Works  */
+.monitor img {
+  margin-top: 20px;
+  width: 400px;
+}
+.monitor{
+	display: flex;
+	justify-content: center;
+}
+.featured h2 {
+  font-size: 40px;
+  text-align: center;
+  }
+ /* Portfolio */
+.portf img{
+	width: 300px;
 	}
+.portf{
+	display: flex;
+	justify-content: center;
+}
+/* Calculator */
+
+/* Meet Our Team */
+.our_hover{
+margin: 0 auto;
+}
+/* Footer */
+.form_info{
+	margin: 0 auto;
+	margin-top: 50px;
+}
+}
 
 
